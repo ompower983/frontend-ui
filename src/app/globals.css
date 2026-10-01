@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+.desktop-sider {
+  margin-left: 260px;
+  transition: margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.desktop-sider-collapsed {
+  margin-left: 90px;
+  transition: margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.desktop-header {
+  left: 260px;
+  /* transition: left 0.3s cubic-bezier(0.2, 0, 0, 1); */
+}
+
+.desktop-header-collapsed {
+  left: 90px;
+  /* transition: left 0.3s cubic-bezier(0.2, 0, 0, 1); */
+}
+
+@media (max-width: 767px) {
+  .desktop-sider,
+  .desktop-sider-collapsed {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-header,
+  .desktop-header-collapsed {
+    left: 0;
+  }
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 4px;
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.ant-drawer .ant-menu-item-selected {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+}
+
+.ant-drawer .ant-menu-item-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 4px;
+  color: #fff !important;
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.ant-menu-light .ant-menu-item {
+  color: #fff !important;
+}
+
+.ant-form-item {
+  margin-bottom: 5px !important;
+}
+
+.ant-g2-chart canvas, canvas {
+  touch-action: pan-y !important;
+}
+
+/* @media (max-width: 575px) {
+  .ant-pagination-options {
+    display: inline-flex !important;
+  }
+} */
