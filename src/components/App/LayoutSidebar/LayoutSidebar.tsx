@@ -71,7 +71,7 @@ const DesktopSidebar = ({ collapsed, selectedKey }: DesktopSidebarProps) => (
       width={260}
       collapsedWidth={90}
       className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-linear-to-br! from-indigo-700 to-blue-600"
-    // className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-black"
+    // className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-linear-to-br! from-[#1bb2a5] to-[#1bb2a5]"
     >
       <div className="flex h-16 items-center justify-center border-gray-700">
         <AppLogo collapsed={collapsed} />
