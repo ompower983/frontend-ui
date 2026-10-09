@@ -70,9 +70,8 @@ const DesktopSidebar = ({ collapsed, selectedKey }: DesktopSidebarProps) => (
       collapsed={collapsed}
       width={260}
       collapsedWidth={90}
-      className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-linear-to-br! from-indigo-700 to-blue-600"
-    // className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-linear-to-br! from-[#1bb2a5] to-[#1bb2a5]"
-    >
+      // className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-linear-to-br! from-indigo-700 to-blue-600"
+      className="fixed! left-0 top-0 bottom-0 h-screen overflow-auto shadow-lg bg-linear-to-br! from-[#0d1e61] to-[#0d1e61]"    >
       <div className="flex h-16 items-center justify-center border-gray-700">
         <AppLogo collapsed={collapsed} />
       </div>
@@ -94,8 +93,7 @@ const MobileDrawer = ({
       size={260}
       closable={false}
       styles={drawerStyles}
-      className="shadow-lg bg-linear-to-br! from-indigo-700 to-blue-600"
-    // className="shadow-lg bg-black!"
+      className="shadow-lg bg-linear-to-br! from-[#0d1e61] to-[#0d1e61]"    // className="shadow-lg bg-black!"
     >
       <div className="flex h-16 items-center justify-between px-4">
         <AppLogo />
